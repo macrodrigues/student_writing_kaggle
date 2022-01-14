@@ -1,74 +1,21 @@
-# Data analysis
-- Document here the project: student_writing_kaggle
-- Description: Project Description
-- Data Source:
-- Type of analysis:
+## Motivation
 
-Please document the project the better you can.
+This project was an attempt of solving the following Kaggle challenge, **Feedback Prize - Evaluating Student Writing**.
 
-# Startup the project
+The objective is to use NLP to detect certain elements on a text, such as showed in the image below:
 
-The initial setup.
+![image](https://user-images.githubusercontent.com/62621924/149427144-934f9f75-7b11-493d-9ba5-ae4568836949.png)
 
-Create virtualenv and install the project:
-```bash
-sudo apt-get install virtualenv python-pip python-dev
-deactivate; virtualenv ~/venv ; source ~/venv/bin/activate ;\
-    pip install pip -U; pip install -r requirements.txt
-```
+## Attempt
 
-Unittest test:
-```bash
-make clean install test
-```
+For this challenge I tried to use a model previous developed for another project (NER model from spacy).
 
-Check for student_writing_kaggle in gitlab.com/{group}.
-If your project is not set please add it:
+The obtained scores are far from being great, at least for certain entities. TSee below the model in action:
 
-- Create a new project on `gitlab.com/{group}/student_writing_kaggle`
-- Then populate it:
+![image](https://user-images.githubusercontent.com/62621924/149428753-a3811054-728f-4364-a4e9-640df8f38824.png)
 
-```bash
-##   e.g. if group is "{group}" and project_name is "student_writing_kaggle"
-git remote add origin git@github.com:{group}/student_writing_kaggle.git
-git push -u origin master
-git push -u origin --tags
-```
+## Submission results preview
 
-Functionnal test with a script:
+![image](https://user-images.githubusercontent.com/62621924/149428579-6f064eb6-1786-45fd-aa6f-f2781c0f163d.png)
 
-```bash
-cd
-mkdir tmp
-cd tmp
-student_writing_kaggle-run
-```
 
-# Install
-
-Go to `https://github.com/{group}/student_writing_kaggle` to see the project, manage issues,
-setup you ssh public key, ...
-
-Create a python3 virtualenv and activate it:
-
-```bash
-sudo apt-get install virtualenv python-pip python-dev
-deactivate; virtualenv -ppython3 ~/venv ; source ~/venv/bin/activate
-```
-
-Clone the project and install it:
-
-```bash
-git clone git@github.com:{group}/student_writing_kaggle.git
-cd student_writing_kaggle
-pip install -r requirements.txt
-make clean install test                # install and test
-```
-Functionnal test with a script:
-
-```bash
-cd
-mkdir tmp
-cd tmp
-student_writing_kaggle-run
-```
