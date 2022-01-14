@@ -1,0 +1,4 @@
+make: Entering directory '/home/macrodrigues/code/macrodrigues/my_projects/student_writing_kaggle'
+pip install -r requirements.txt
+make: Leaving directory '/home/macrodrigues/code/macrodrigues/my_projects/student_writing_kaggle'
+ 
